@@ -1,0 +1,49 @@
+body{
+    background-color: royalblue;
+    
+}
+
+#content{
+
+    width: 30%; 
+    margin: 0 auto;
+}
+
+h1{
+    color: white;
+    text-align: center;
+        }
+
+h1:hover{
+    color: black;
+}
+
+
+
+p{
+    text-align: center;
+    color: white;
+}
+
+#justbold{
+    font-weight: bold;
+}
+
+ol{
+    font-size: large;
+    font-weight: bold;
+    color: black;
+}
+img{
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+}
+
+#big{
+    font-size: xx-large;
+}
+
+#blacktext{
+    color: black;
+}
