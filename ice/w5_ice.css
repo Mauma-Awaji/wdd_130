@@ -1,0 +1,26 @@
+body{
+width: 80%;
+margin: 0 auto;
+}
+
+#background{
+    background-color: gray;
+    text-align: center;
+}
+
+img{
+    width: 100%;
+    }
+
+#background img{
+    border: 10px solid  black;
+    border-radius: 50%;
+    display: inline-block;
+    width: 300px;
+    margin: 10px 75px;
+    
+    
+    
+    
+    
+}
