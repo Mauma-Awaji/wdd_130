@@ -6,6 +6,7 @@ margin: 0 auto;
 #background{
     background-color: gray;
     text-align: center;
+    margin-top: -5px;
 }
 
 img{
@@ -16,8 +17,8 @@ img{
     border: 10px solid  black;
     border-radius: 50%;
     display: inline-block;
-    width: 300px;
-    margin: 10px 75px;
+    width: 20%;
+    margin: 40px;
     
     
     
