@@ -233,19 +233,21 @@ footer .social img{
 
 
 /* FAQ Page 2 */
-body header{
+#faq-header{
     background-color: #ECE5F0;
     margin: 0;
     padding: 0;
 }
 
-#faq-header{
-    
+faq-body{
     text-align: center;
+}
+
+#faq-heading{
     font-family: 'Water Brush', 'Brush Script MT', serif;
     font-size: 2.5em;
     color: #003B36;
-
+    text-align: center;
 }
 
 .faq-green{
