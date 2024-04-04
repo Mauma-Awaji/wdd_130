@@ -38,13 +38,17 @@ nav{
     justify-content: space-around;
 }
 
+#homehead {
+    text-shadow: 3px 3px 3px #003B36;
+    
+ }
 
 nav a{
     text-align: center;
     color:  #2bc1b4;
-    text-shadow: 3px 3px 3px #003B36;
-    text-decoration: none;
     padding: 35px;
+    text-decoration: none;
+
 }
 
 nav a:hover{
@@ -239,7 +243,7 @@ footer .social img{
     padding: 0;
 }
 
-faq-body{
+.faq-body{
     text-align: center;
 }
 
@@ -253,23 +257,112 @@ faq-body{
 .faq-green{
     background-color: #003B36;
     color: #F8CB8B;
+    padding: 50px;
+    margin: auto;
+    text-align: center;
 }
 
 .faq-img{
-    float: right;  
-    margin-left: 25px;
-    width: 200px; 
-    height: 200px; 
+    float: right; 
+    padding: 15px;
+    margin: 15px; 
+    width: 350px; 
+    height: 300px; 
 }
 
 .faq-orange{
     background-color: #F8CB8B;
     color: #003B36;
+    padding: 50px;
+    margin: auto;
+    text-align: center;
    }
 
 dt{
     font-weight: bold;
 }
+
+/* Contact Us Page */
+body {
+    /* Center the form on the page */
+    text-align: center;
+  }
+  
+  form {
+    display: inline-block;
+    /* Form outline */
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  form li + li {
+    margin-top: 1em;
+  }
+  
+  label {
+    /* Uniform size & alignment */
+    display: inline-block;
+    min-width: 90px;
+    text-align: right;
+  }
+  
+  input,
+  textarea {
+    /* To make sure that all text fields have the same font settings
+       By default, textareas have a monospace font */
+    font: 1em sans-serif;
+    /* Uniform text field size */
+    width: 300px;
+    box-sizing: border-box;
+    /* Match form field borders */
+    border: 1px solid #999;
+  }
+  
+  input:focus,
+  textarea:focus {
+    /* Additional highlight for focused elements */
+    border-color: #000;
+  }
+  
+  textarea {
+    /* Align multiline text fields with their labels */
+    vertical-align: top;
+    /* Provide space to type some text */
+    height: 5em;
+  }
+  
+  .button {
+    /* Align buttons with the text fields */
+    padding-left: 90px; /* same size as the label elements */
+  }
+  
+  button {
+    /* This extra margin represent roughly the same space as the space
+       between the labels and their text fields */
+    margin-left: 0.5em;
+  }
+
+  #feedback {
+    background-color: antiquewhite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5em;
+    /* make this element invisible until we are ready for it */
+    display: none;      
+}
+.moveDown {
+    margin-top: 3em;
+}
+
 
 
 @media screen and (max-width: 900px) {
