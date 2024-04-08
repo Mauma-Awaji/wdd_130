@@ -40,7 +40,7 @@ nav{
 
 nav a{
     text-align: center;
-    color:  #ad8f1f;
+    color: #E8E9EB;
     padding: 35px;
     text-decoration: none;
 
@@ -53,14 +53,16 @@ nav a:hover{
 
 #hometitle-grid{
     display:grid;
-    grid-template-columns:2fr 2fr 1fr 1fr 1fr 1fr;;
+    grid-template-columns: 1fr 50px 1fr 10px;
     justify-items: center;
-    gap: 100px;
+    justify-content: center;
+    gap: 20px;
 }
 
 #title-box{
-    grid-column: 1/3;
+    grid-column: 1/2;
     text-align: center;
+    padding-left: 25px;
 }
 
 .home-title{
@@ -70,42 +72,212 @@ nav a:hover{
 }
 
 .home-menu{
-    grid-column: 3/7;
-    width: 500px;
-    height: 500px;
+    grid-column: 3/4;
+    width: 85%;
+    height: 450px;
     overflow-y: auto;
     background-color: #ad8f1f;
     color: #313638;
     display: block;
     padding: 50px;
+    margin: 50px;
     text-decoration: none;
-}
-  
-
-.home-menu:hover {
-    transform: scale(1.1);
-}
-
-.home-grid{
-    display:grid;
-    grid-template-columns: 2fr 2fr 1fr 1fr 1fr 1fr;
-    justify-items: center;
-    gap: 20px;
-}
-
-#home-gym-text{
-    grid-column: 1/3;
     text-align: center;
 }
 
-#gymleaders{
-    grid-column: 3/6;
+.home-menu:hover {
+    background-color: #313638;
+    color: #ad8f1f;
+    transform: scale(1.1);
+}
+
+p a{
+    color: #313638;
+    text-decoration: none;
+}
+
+p a:hover{
+    font-weight: bold;
 }
 
 #gymleaderspic{
+    float: right;
     width: 500px;
-    height: 250px;
+    padding-left: 50px;
+    padding-right: 50px; 
 }
+
+#home-gym-text{
+  text-align: center;
+  padding-left: 25px;
+  margin-top:200px;
+  margin-bottom: 300px;
+}
+
+#elitefourpic{
+    float: left;
+    width: 500px;
+    padding-left: 50px;
+    padding-right: 50px;
+ }
+
+#home-elitefour-text{
+    text-align: center;
+    padding-right: 25px;
+    margin-top: 300px;
+    margin-bottom: 200px;
+}
+
+#homechampionpic{
+    float: right;
+    width: 500px;
+    padding-right: 50px;   
+}
+
+#homechampion-text{
+   text-align: center;
+   margin-top: 300px;
+   padding-left: 25px;
+}
+
+ 
+/*Gym Leaders Page */
+
+#page-title{
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.words{
+    padding: 50px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+#gym-grid{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1px 1fr;
+    justify-items: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.left{
+
+    margin-right: 0;
+    border: 5px solid #313638;
+    background-color: #E0DFD5;
+    opacity: 1;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+
+}
+
+.right{
+
+    margin-left: 0;
+    border: 5px solid #313638;
+    background-color: #E0DFD5;
+    opacity: 1;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.container.c1{
+    grid-column: 1/2;
+    justify-self: right;
+}
+
+.container.c2{
+    grid-column: 3/4;
+    justify-self: left;
+}
+
+.container {
+    position: relative;   
+}
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%; /* Position the top of the element at the middle of the container */
+    left: 50%; /* Position the left side of the element at the center of the container */
+    transform: translate(-50%, -50%); /* Translate the element by -50% of its own width and height to center it */
+    -ms-transform: translate(-50%, -50%); /* For Microsoft browsers */
+    text-align: center;
+    width: 100%;
+    height: 50%;
+    overflow-y: auto;
+}
+
+.container:hover .left,.container:hover .right{
+    opacity: 0.1;
+    background-color: #313638;
+}
+
+.container:hover .middle, .champ:hover .middle {
+    opacity: 1;
+}
+  
+.text {
+    color: #313638;
+    padding: 16px;
+  }
+
+
+/* Pokemon League */
+
+.container:hover .pokeleaguepic, .champ:hover .pokeleaguepic{
+    opacity: 0.1;
+    background-color: #313638;
+}
+
+
+.pokeleaguepic{
+    border: 5px solid #313638;
+    background-color: #E0DFD5;
+    opacity: 1;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.champ{
+    margin-top: 150px;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    place-items: center;
+ } 
+
+ .champcontainer{
+    position: relative; 
+ }
+  
+ .champ .pokeleaguepic .middle{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%; /* Position the top of the element at the middle of the container */
+    left: 50%; /* Position the left side of the element at the center of the container */
+    transform: translate(-50%, -50%); /* Translate the element by -50% of its own width and height to center it */
+    -ms-transform: translate(-50%, -50%); /* For Microsoft browsers */
+    text-align: center;
+    width: auto;
+    height: 50%;
+    overflow-y: auto;
+ }
+
 
 footer{
     background-color: #313638;
@@ -117,7 +289,7 @@ footer{
 }
 
 footer a{
-    color: #ad8f1f;
+    color: #E8E9EB;
     text-decoration: none;
 }
 
@@ -127,6 +299,7 @@ footer a:hover{
 }
 
 footer p{
+    color: #E8E9EB;
     font-size: 1.2em;
 }
 
